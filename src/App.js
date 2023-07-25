@@ -24,7 +24,7 @@ function App() {
           toast.success(
             `Successfully fetched weather for ${data.cityData.EnglishName}, ${data.cityData.StateName}, ${data.currentWeatherData.country}`
           );
-
+          console.log(process.env.REACT_APP_API_KEY);
           setWeather(data);
         });
       } catch (error) {
