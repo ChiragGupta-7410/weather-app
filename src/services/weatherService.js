@@ -11,11 +11,8 @@ const DAILY_FORECAST_URL =
 const HOURLY_FORECAST_URL =
   "http://dataservice.accuweather.com/forecasts/v1/hourly/12hour/";
 
-const API_KEY = [
-  "adCpiFheZkODT8vxsGLfO3ystD27cIOx",
-  "v8h88G86M0hOki2DaKHGO1AHiGAFjpOk",
-];
-const API_KEY_2 = "9f913bbf8fb78b22f39c164441e85471";
+const API_KEY = process.env.REACT_APP_API_KEY.split(" ");
+const API_KEY_2 = process.env.REACT_APP_API_KEY_2;
 
 const formatToLocalTime = (
   secs,
