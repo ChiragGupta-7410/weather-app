@@ -8,6 +8,7 @@ import formattedApiData from "./services/weatherService";
 import { useEffect, useState } from "react";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import Footer from "./components/Footer";
 
 function App() {
   const [query, setQuery] = useState("Mumbai");
@@ -65,6 +66,7 @@ function App() {
           />
         </div>
       )}
+      <Footer />
       <ToastContainer
         autoClose={5000}
         theme="colored"
