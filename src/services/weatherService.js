@@ -1,15 +1,15 @@
 import { DateTime } from "luxon";
 
 const LOCATION_URL =
-  "http://dataservice.accuweather.com/locations/v1/cities/search";
+  "https://dataservice.accuweather.com/locations/v1/cities/search";
 
 const CURRENT_WEATHER_URL = "https://api.openweathermap.org/data/2.5/weather";
 
 const DAILY_FORECAST_URL =
-  "http://dataservice.accuweather.com/forecasts/v1/daily/5day/";
+  "https://dataservice.accuweather.com/forecasts/v1/daily/5day/";
 
 const HOURLY_FORECAST_URL =
-  "http://dataservice.accuweather.com/forecasts/v1/hourly/12hour/";
+  "https://dataservice.accuweather.com/forecasts/v1/hourly/12hour/";
 
 const API_KEY = process.env.REACT_APP_API_KEY.split(" ");
 const API_KEY_2 = process.env.REACT_APP_API_KEY_2;
